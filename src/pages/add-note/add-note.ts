@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NoteService } from '../../providers/note-service/note-service';
 import {Note} from '../../models/note.model';
-import { FormGroup, Validator, FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @IonicPage()
 @Component({
