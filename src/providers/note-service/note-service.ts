@@ -7,7 +7,7 @@ export class NoteService {
 
   private notes: {title:string} [] = [];
 
-  constructor(public http: HttpClient) {
+  constructor() {
   }
 
   saveNote(note: {title: string}){
