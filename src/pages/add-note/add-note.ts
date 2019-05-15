@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NoteService } from '../../providers/note-service/note-service';
 import {Note} from '../../models/note.model';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, Validator, FormControl } from '@angular/forms';
 
 @IonicPage()
 @Component({
@@ -16,12 +16,11 @@ export class AddNotePage {
   title: string ='';
   content: string='';
 
-  constructor(public navCtrl: NavController,private noteService: NoteService) {
+  constructor(public navCtrl: NavController, private noteService: NoteService) {
     this.formGroup= new FormGroup({
       title: new FormControl(),
       content: new FormControl(),
       date: new FormControl()
-  
     })
   }
 

@@ -34,6 +34,14 @@ export class NoteService {
     })
   }
 
+  editNote(createDate: number, note: Note){
+    return this.storage.get('notes').then((notes)=>{
+      const index = [...notes].findIndex(r=>r.createDate === createDate);
+      notes[index] = { ...note, createDate };
+      this.storage.set('notes', notes);
+    })
+  }
+
   deleteNote(createDate: number){
     this.notes = this.notes.filter((note)=>{
       return note.createDate !== createDate

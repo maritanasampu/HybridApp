@@ -1,6 +1,6 @@
-page-view-note {
+page-edit-note {
     ion-content{
-        background: url(../assets/imgs/bg4.jpg)no-repeat center fixed;
+        background: url(../assets/imgs/bg2.jpg)no-repeat center fixed;
         background-size: cover;
         &:before{
             content: '';
@@ -10,16 +10,7 @@ page-view-note {
             bottom:0;
             left:0;
             background-image: linear-gradient(to bottom right, #02362C, #003199);
-            opacity: .4;
+            opacity: .3;
         }
-        .button {
-            float: right;
-        }
-    }
-    .date {
-        font-weight: bold;
-        color: #888888;
-        padding-right: 24px;
-        font-size: 0.8em;
     }
 }
